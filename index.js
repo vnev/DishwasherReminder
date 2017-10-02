@@ -13,14 +13,14 @@ while (person_one === person_two) {
 
 // send message to person one
 client.messages.create({
-	body: "Its your turn for dishwasher duty boi",
+	body: "Its your turn for dishwasher duty boi. Do 'em so dirty dishes don't show up in your room",
 	to: person_one,
 	from: config["from_number"]
 }).then((message) => console.log(message.sid));
 
 // send message to person two
 client.messages.create({
-	body: "Its your turn for dishwasher duty boi",
+	body: "Its your turn for dishwasher duty boi. Do 'em so dirty dishes don't show up in your room",
 	to: person_two,
 	from: config["from_number"]
 }).then((message) => console.log(message.sid));
