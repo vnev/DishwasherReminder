@@ -1,0 +1,11 @@
+{
+  "name": "dishwash_reminder",
+  "version": "1.0.0",
+  "description": "Dishwasher Reminder for roomates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vedant Nevetia <nevetia.vedant@gmail.com>",
+  "license": "ISC"
+}
