@@ -20,4 +20,10 @@ you will need a `config.json` file in the same directory as `index.js`. the form
 	}
 ```
 
-once you fill those in, run the `index.js` file and it should begin working. you can run this app as either a cron job or some other scheduling service or something
+once you fill those in, run the `index.js` file and it should begin working. you can run this app as either a cron job or some other scheduling service or something. an example cron job is (run `crontab -e` to access cron jobs file):
+
+```
+	00 11 * * * /usr/bin/node PATH_TO_INDEX.JS
+```
+
+this will run `node index.js` every day at 11AM
