@@ -16,12 +16,12 @@ you will need a `config.json` file in the same directory as `index.js`. the form
 	{
 		"account_id": "TWILIO_ACCOUNT_ID",
 		"auth_token": "TWILIO_AUTH_TOKEN",
-		"to_numbers": [ "PHONE_NUMBER_1", "PHONE_NUMBER_2", ... ],
+		"to_numbers": [ { "name: "NAME_1", "number": "PHONE_NUMBER_1" }, { "name": "NAME_2", "number": "PHONE_NUMBER_2" }, ... ],
 		"from_number": "TWILIO_PHONE_NUMBER"
 	}
 ```
 
-once you fill those in, run the `index.js` file and it should begin working. you can run this app as either a cron job or some other scheduling service or something. an example cron job is (run `crontab -e` to access cron jobs file):
+once you fill those in, run the `index.js` file and it should begin working. this will create a `history.json` file for you in the same directory, that it will use to maintain "fairness". you can run this app as either a cron job or some other scheduling service or something. an example cron job is (run `crontab -e` to access cron jobs file):
 
 ```
 	00 11 * * * /usr/bin/node PATH_TO_INDEX.JS
